@@ -1528,16 +1528,25 @@ transparent 95%,
 
 /* SCORE */
 .score{
-    width:90px;
-    text-align:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    width:auto;
+    min-width:120px;
 
     font-family:'Oxanium', sans-serif;
-    font-size:50px;      /* Sebelumnya 60px */
+    font-size:52px;
     font-weight:700;
     line-height:1;
-    letter-spacing:.5px;
 
     color:#D4AF37;
+
+    white-space:nowrap;
+    flex-wrap:nowrap;
+    overflow:hidden;
+
+    letter-spacing:2px;
 }
   @media (max-width:768px){
     .score{
